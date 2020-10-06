@@ -19,9 +19,9 @@ int main()
   double mph = calcMilesPerHour(winningTime, 0.00062137121212121);
 
   displayResults(fps, kph, mph, mps);
-  /*displayTimeToRunMile(mph);
+  displayTimeToRunMile(mph);
 
-  double hundredYards = calcTime100Yards(fps);
+  /*double hundredYards = calcTime100Yards(fps);
   displayHundredYardsTime(hundredYards);
   */
   printf("%lf", mph);
