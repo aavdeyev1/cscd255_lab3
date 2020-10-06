@@ -11,5 +11,7 @@ double calculateKillmeterPerHour(const double DISTANCE, double winningTime, doub
 double calcMilesPerHour(double winningTime, double mph_factor);
 void displayResults(double fps, double kph, double mph, double mps);
 void displayTimeToRunMile(double mph);
+double calcTime100Yards(double fps);
+void displayHundredYardsTime(double yardsTime);
 
 #endif

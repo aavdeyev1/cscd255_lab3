@@ -45,11 +45,11 @@ double calcMilesPerHour(double winningTime, double mph_factor)
 
 void displayResults(double fps, double kph, double mph, double mps)
 {
-    printf("\nThe person was traveling at a rate of:\n");					  
-      printf("%.2lf  meters per second.\n", mps);
-      printf("%.2lf feet per second.\n", fps);
-      printf("%.2lf miles per hour.\n", mph);
-      printf("%.2lf kilometers per hour.\n \n", kph);
+    printf("\nThe person was traveling at a rate of:\n");
+    printf("%.2lf  meters per second.\n", mps);
+    printf("%.2lf feet per second.\n", fps);
+    printf("%.2lf miles per hour.\n", mph);
+    printf("%.2lf kilometers per hour.\n \n", kph);
 
 }
 
@@ -57,7 +57,7 @@ void displayResults(double fps, double kph, double mph, double mps)
 void displayTimeToRunMile(double mph)
 {
     double mileTimeD = (1.0/mph)*60.0;
-    int mileTimeI    = (1.0/mph)*60.0;                                        
+    int mileTimeI    = (1.0/mph)*60.0;
     double mileTimeS = (mileTimeD-mileTimeI)*60.0; 
 
     printf("It would take the runner ");
@@ -65,5 +65,21 @@ void displayTimeToRunMile(double mph)
     printf("and ");
     printf("%.2lf seconds ", mileTimeS);
     printf("to run a mile. \n");
+
+}
+
+
+double calcTime100Yards(double fps)
+{
+    
+    return 300.0/fps;
+}
+
+
+void displayHundredYardsTime(double yardsTime)
+{
+    printf("It would take the runner ");
+    printf("%.2lf seconds ", yardsTime);
+    printf("to run 100 yards.");
 
 }

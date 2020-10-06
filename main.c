@@ -3,9 +3,6 @@
 
 const double DISTANCE = 100.0;
 
-// need clang -7 -pthread -lm -o main cscd255lab2.c lab3.c
-
-// go one at a time.
 
 int main()
 {
@@ -21,10 +18,8 @@ int main()
   displayResults(fps, kph, mph, mps);
   displayTimeToRunMile(mph);
 
-  /*double hundredYards = calcTime100Yards(fps);
+  double hundredYards = calcTime100Yards(fps);
   displayHundredYardsTime(hundredYards);
-  */
-  printf("%lf", mph);
-
+  
 
 }// end main
